@@ -1,0 +1,79 @@
+<h1>New spot_activity</h1>
+
+<% form_for(@spot_activity) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :time_in_milliseconds %><br />
+    <%= f.text_field :time_in_milliseconds %>
+  </p>
+  <p>
+    <%= f.label :celsius %><br />
+    <%= f.text_field :celsius %>
+  </p>
+  <p>
+    <%= f.label :light %><br />
+    <%= f.text_field :light %>
+  </p>
+  <p>
+    <%= f.label :sw1 %><br />
+    <%= f.check_box :sw1 %>
+  </p>
+  <p>
+    <%= f.label :sw2 %><br />
+    <%= f.check_box :sw2 %>
+  </p>
+  <p>
+    <%= f.label :accel %><br />
+    <%= f.text_field :accel %>
+  </p>
+  <p>
+    <%= f.label :accelx %><br />
+    <%= f.text_field :accelx %>
+  </p>
+  <p>
+    <%= f.label :accely %><br />
+    <%= f.text_field :accely %>
+  </p>
+  <p>
+    <%= f.label :accelz %><br />
+    <%= f.text_field :accelz %>
+  </p>
+  <p>
+    <%= f.label :rel_accel %><br />
+    <%= f.text_field :rel_accel %>
+  </p>
+  <p>
+    <%= f.label :rel_accelx %><br />
+    <%= f.text_field :rel_accelx %>
+  </p>
+  <p>
+    <%= f.label :rel_accely %><br />
+    <%= f.text_field :rel_accely %>
+  </p>
+  <p>
+    <%= f.label :rel_accelz %><br />
+    <%= f.text_field :rel_accelz %>
+  </p>
+  <p>
+    <%= f.label :tiltx %><br />
+    <%= f.text_field :tiltx %>
+  </p>
+  <p>
+    <%= f.label :tilty %><br />
+    <%= f.text_field :tilty %>
+  </p>
+  <p>
+    <%= f.label :tiltz %><br />
+    <%= f.text_field :tiltz %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', spot_activities_path %>

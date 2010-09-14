@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  swap_times: 
+  cycle_times: 
+
+two:
+  swap_times: 
+  cycle_times: 

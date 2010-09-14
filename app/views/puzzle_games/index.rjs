@@ -1,0 +1,1 @@
+page.replace 'puzzle_games', :partial => 'puzzle_games_big'

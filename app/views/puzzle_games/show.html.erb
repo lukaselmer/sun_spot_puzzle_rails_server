@@ -1,0 +1,13 @@
+<p>
+  <b>Swap times:</b>
+  <%=h @puzzle_game.swap_times %>
+</p>
+
+<p>
+  <b>Cycle times:</b>
+  <%=h @puzzle_game.cycle_times %>
+</p>
+
+
+<%= link_to 'Edit', edit_puzzle_game_path(@puzzle_game) %> |
+<%= link_to 'Back', puzzle_games_path %>

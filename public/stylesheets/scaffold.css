@@ -1,0 +1,139 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+body .fl {
+    float: left;
+}
+/* line 23, ../../../app/stylesheets/general.sass */
+body .fr {
+    float: right;
+}
+/* line 25, ../../../app/stylesheets/general.sass */
+body .clearer {
+    clear: both;
+}
+
+
+table {
+    margin-bottom: 1.4em;
+    width: 100%;
+}
+
+/* line 147, ../../../../../ruby-1.8.6/lib/ruby/gems/1.8/gems/compass-0.10.0.pre8/frameworks/blueprint/stylesheets/blueprint/_typography.sass */
+th {
+    font-weight: bold;
+}
+
+/* line 149, ../../../../../ruby-1.8.6/lib/ruby/gems/1.8/gems/compass-0.10.0.pre8/frameworks/blueprint/stylesheets/blueprint/_typography.sass */
+thead th {
+    background: #c3d9ff;
+}
+
+/* line 151, ../../../../../ruby-1.8.6/lib/ruby/gems/1.8/gems/compass-0.10.0.pre8/frameworks/blueprint/stylesheets/blueprint/_typography.sass */
+th, td, caption {
+    padding: 4px 10px 4px 5px;
+}
+
+/* line 153, ../../../../../ruby-1.8.6/lib/ruby/gems/1.8/gems/compass-0.10.0.pre8/frameworks/blueprint/stylesheets/blueprint/_typography.sass */
+tr.even {
+    background: #e5ecf9;
+}
+
+/* line 155, ../../../../../ruby-1.8.6/lib/ruby/gems/1.8/gems/compass-0.10.0.pre8/frameworks/blueprint/stylesheets/blueprint/_typography.sass */
+tfoot {
+    font-style: italic;
+}
+
+
+/* line 58, ../../../app/stylesheets/general.sass */
+table {
+    border: 1px solid #e4e4e4;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 4px;
+}
+/* line 63, ../../../app/stylesheets/general.sass */
+table th {
+    background-color: #EEEEEE;
+    padding: 4px;
+    text-align: left;
+}
+/* line 68, ../../../app/stylesheets/general.sass */
+table td {
+    vertical-align: top;
+}
+/* line 71, ../../../app/stylesheets/general.sass */
+table tbody tr.group td {
+    padding: 0.8em 0 0.5em 0.3em;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+/* line 75, ../../../app/stylesheets/general.sass */
+table tbody tr.group td span.count {
+    color: #aaa;
+    font-size: 80%;
+}
+/* line 78, ../../../app/stylesheets/general.sass */
+table tbody tr:hover {
+    background-color: #ffffdd;
+}
+/* line 80, ../../../app/stylesheets/general.sass */
+table tbody tr.group:hover {
+    background-color: inherit;
+}
+/* line 82, ../../../app/stylesheets/general.sass */
+table tbody td.actions {
+    width: 50px;
+}
+

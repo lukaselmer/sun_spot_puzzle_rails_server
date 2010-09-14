@@ -1,0 +1,20 @@
+<h1>Editing puzzle_game</h1>
+
+<% form_for(@puzzle_game) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :swap_times %><br />
+    <%= f.text_field :swap_times %>
+  </p>
+  <p>
+    <%= f.label :cycle_times %><br />
+    <%= f.text_field :cycle_times %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @puzzle_game %> |
+<%= link_to 'Back', puzzle_games_path %>

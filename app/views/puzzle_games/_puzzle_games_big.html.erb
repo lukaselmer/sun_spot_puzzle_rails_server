@@ -1,0 +1,7 @@
+<div class="fl" id="puzzle_games" style="margin: 0 70px 0 0;">
+  <h2>Die Neusten</h2>
+  <%= render 'puzzle_game_list', :puzzle_games => @puzzle_games %>
+  <div style="text-align: center;">
+    <%= will_paginate @puzzle_games %>
+  </div>
+</div>

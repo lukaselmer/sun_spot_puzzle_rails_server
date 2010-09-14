@@ -1,0 +1,79 @@
+<h1>Listing spot activities</h1>
+
+<% @spot_activities_by_address.each do |address, sas| %>
+  <canvas id="<%=h address %>_chart" width="1600" height="900"></canvas>
+
+  <script type="text/javascript">
+    var g = new Bluff.Line('<%=h address %>_chart', '1600x900');
+    g.title = 'Acceleration for <%=h address %>';
+    g.tooltips = true;
+    g.dot_radius = 2;
+    g.title_font_size = 15;
+    g.legend_font_size = 9;
+    g.marker_font_size = 10;
+    g.marker_count = 6;
+    g.theme_37signals();
+    g.add_color("#aaa000");
+
+
+  <% [:accel,:accelx,:accely,:accelz,:rel_accel,:rel_accelx,:rel_accely,:rel_accelz].each do |type| %>
+      g.data("<%= type.to_s.humanize %>", [<%= sas.collect(&type).join(',') %>]);
+  <% end %>
+
+
+    //g.labels = {0: '2003', 2: '2004', 4: '2005'};
+
+    g.draw();
+  </script>
+<% end %>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Time in milliseconds</th>
+    <th>Celsius</th>
+    <th>Light</th>
+    <th>Sw1</th>
+    <th>Sw2</th>
+    <th>Accel</th>
+    <th>Accelx</th>
+    <th>Accely</th>
+    <th>Accelz</th>
+    <th>Rel accel</th>
+    <th>Rel accelx</th>
+    <th>Rel accely</th>
+    <th>Rel accelz</th>
+    <th>Tiltx</th>
+    <th>Tilty</th>
+    <th>Tiltz</th>
+  </tr>
+
+  <% @spot_activities.each do |spot_activity| %>
+    <tr>
+      <td><%=h spot_activity.address %></td>
+      <td><%=h spot_activity.time_in_milliseconds %></td>
+      <td><%=h spot_activity.celsius %></td>
+      <td><%=h spot_activity.light %></td>
+      <td><%=h spot_activity.sw1 %></td>
+      <td><%=h spot_activity.sw2 %></td>
+      <td><%=h spot_activity.accel %></td>
+      <td><%=h spot_activity.accelx %></td>
+      <td><%=h spot_activity.accely %></td>
+      <td><%=h spot_activity.accelz %></td>
+      <td><%=h spot_activity.rel_accel %></td>
+      <td><%=h spot_activity.rel_accelx %></td>
+      <td><%=h spot_activity.rel_accely %></td>
+      <td><%=h spot_activity.rel_accelz %></td>
+      <td><%=h spot_activity.tiltx %></td>
+      <td><%=h spot_activity.tilty %></td>
+      <td><%=h spot_activity.tiltz %></td>
+      <td><%= link_to 'Show', spot_activity %></td>
+      <td><%= link_to 'Edit', edit_spot_activity_path(spot_activity) %></td>
+      <td><%= link_to 'Destroy', spot_activity, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New spot_activity', new_spot_activity_path %>

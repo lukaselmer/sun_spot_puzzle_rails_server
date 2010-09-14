@@ -1,0 +1,2 @@
+module PuzzleGamesHelper
+end

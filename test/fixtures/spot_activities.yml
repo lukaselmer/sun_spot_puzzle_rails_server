@@ -1,0 +1,39 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  address: MyString
+  time_in_milliseconds: 
+  celsius: 
+  light: 1
+  sw1: false
+  sw2: false
+  accel: 
+  accelx: 
+  accely: 
+  accelz: 
+  rel_accel: 
+  rel_accelx: 
+  rel_accely: 
+  rel_accelz: 
+  tiltx: 
+  tilty: 
+  tiltz: 
+
+two:
+  address: MyString
+  time_in_milliseconds: 
+  celsius: 
+  light: 1
+  sw1: false
+  sw2: false
+  accel: 
+  accelx: 
+  accely: 
+  accelz: 
+  rel_accel: 
+  rel_accelx: 
+  rel_accely: 
+  rel_accelz: 
+  tiltx: 
+  tilty: 
+  tiltz: 

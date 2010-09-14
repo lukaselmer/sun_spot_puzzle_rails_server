@@ -1,0 +1,7 @@
+
+/config/deployment_password
+/config/database.yml
+/config/deploy.rb
+.svn
+/nbproject/private
+/tmp/*/*
