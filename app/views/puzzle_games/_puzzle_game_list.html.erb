@@ -2,7 +2,7 @@
   <tr>
     <th>Aktionen</th>
     <th>Dauer</th>
-    <th>Zyklen</th>
+    <!--<th>Zyklen</th>-->
     <th>Gespielt am</th>
   </tr>
 
@@ -10,7 +10,7 @@
     <tr class="<%= cycle("even", "odd") -%>">
       <td style="width: 65px;"><%= puzzle_game.swap_times %></td>
       <td style="width: 65px;"><%= puzzle_game.game_time_in_words %></td>
-      <td style="width: 65px;"><%= puzzle_game.cycle_times %></td>
+      <!--<td style="width: 65px;"><%= puzzle_game.cycle_times %></td>-->
       <td style="width: 280px;"><%= l puzzle_game.created_at %></td>
     </tr>
   <% end %>
