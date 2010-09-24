@@ -1,6 +1,7 @@
-<table style="width: 505px;">
+<table style="width: 605px;">
   <tr>
-    <th>Aktionen</th>
+    <th>Adresse</th>
+    <th>Swaps</th>
     <th>Dauer</th>
     <!--<th>Zyklen</th>-->
     <th>Gespielt am</th>
@@ -8,10 +9,11 @@
 
   <% puzzle_games.each do |puzzle_game| %>
     <tr class="<%= cycle("even", "odd") -%>">
-      <td style="width: 65px;"><%= puzzle_game.swap_times %></td>
-      <td style="width: 65px;"><%= puzzle_game.game_time_in_words %></td>
+      <td style="width: 55px;"><small><%= puzzle_game.address %></small></td>
+      <td style="width: 45px;"><%= puzzle_game.swap_times %></td>
+      <td style="width: 55px;"><%= puzzle_game.game_time_in_words %></td>
       <!--<td style="width: 65px;"><%= puzzle_game.cycle_times %></td>-->
-      <td style="width: 280px;"><%= l puzzle_game.created_at %></td>
+      <td style="width: 380px;"><%= l puzzle_game.created_at %></td>
     </tr>
   <% end %>
 </table>
